@@ -3,27 +3,45 @@
 > An example service to be used in and with Project Helix
 
 ## Status
-[![codecov](https://img.shields.io/codecov/c/github/adobe/helix-service.svg)](https://codecov.io/gh/adobe/helix-service)
-[![CircleCI](https://img.shields.io/circleci/project/github/adobe/helix-service.svg)](https://circleci.com/gh/adobe/helix-service)
-[![GitHub license](https://img.shields.io/github/license/adobe/helix-service.svg)](https://github.com/adobe/helix-service/blob/master/LICENSE.txt)
-[![GitHub issues](https://img.shields.io/github/issues/adobe/helix-service.svg)](https://github.com/adobe/helix-service/issues)
-[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-service.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-service)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/helix-service.svg)](https://greenkeeper.io/)
+[![codecov](https://img.shields.io/codecov/c/github/adobe/helix-example-basic.svg)](https://codecov.io/gh/adobe/helix-example-basic)
+[![CircleCI](https://img.shields.io/circleci/project/github/adobe/helix-example-basic.svg)](https://circleci.com/gh/adobe/helix-example-basic)
+[![GitHub license](https://img.shields.io/github/license/adobe/helix-example-basic.svg)](https://github.com/adobe/helix-example-basic/blob/master/LICENSE.txt)
+[![GitHub issues](https://img.shields.io/github/issues/adobe/helix-example-basic.svg)](https://github.com/adobe/helix-example-basic/issues)
+[![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-example-basic.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-example-basic)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/helix-example-basic.svg)](https://greenkeeper.io/)
 
-## Installation
+This Helix Basic Example is your starting point to [Helix](https://www.project-helix.io/). 
 
-## Usage
+## Prerequisites
+TODO explain what's needed and point to the Getting Started guide
 
-```bash
-curl https://adobeioruntime.net/api/v1/web/helix/helix-services/service@v1
-```
+## Overview
+> So far this is more a skeleton than a complete example, it needs to be fleshed out but already
+> demonstrates the idea of standalone examples including integration tests that validate them
+> along with the whole publishing chain. Discussion at [#27](https://github.com/adobe/helix-home/issues/27).
 
-For more, see the [API documentation](docs/API.md).
+It demonstrates a basic website with a few pages, a header and a footer,
+all in Markdown format, along with a simple custom CSS stylesheet and a few images.
 
-## Development
+By default, this example Helix website is published at https://helix-example-basic-adobe.project-helix.page/ . If you forked this repository, replace `adobe` with your GitHub username in that URL.
 
-### Deploying Helix Static
+To access other Helix examples use [This GitHub query](https://github.com/topics/helix-example) - each example is found in its own GitHub repository.
 
-Deploying Helix Service requires the `wsk` command line client, authenticated to a namespace of your choice. For Project Helix, we use the `helix` namespace.
+For more info on Helix see https://www.project-helix.io/
 
-All commits to master that pass the testing will be deployed automatically. All commits to branches that will pass the testing will get commited as `/helix-services/service@ci<num>` and tagged with the CI build number.
+_TODO: complete this example so it fits the below description_
+
+ _TODO: refine the GitHub query, in a specific org only?_
+
+## Files that you can ignore
+Feel free to ignore files and folder having names that start with a dot, as well as the `test` and `node_modules` folder
+and the `package.*` files. Those are only used by the Helix team to validate this test with CircleCI.
+
+_TODO: we might hide those files in a separate branch that's merged before running the tests_
+
+## How to play with this example
+You can modifiy the `*.md` files at will and add new ones. Changes are published automatically, within a few seconds. _TODO add caching info_.
+
+For now the only 'magic' files are `header.md` and `footer.md`, other files are considered to be pages of your Helix website.
+
+

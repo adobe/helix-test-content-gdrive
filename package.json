@@ -1,34 +1,33 @@
 {
-  "name": "@adobe/helix-service",
+  "name": "@adobe/helix-example-basic",
   "version": "1.1.0",
-  "description": "Example Package",
+  "description": "Helix Basic Example",
   "main": "src/index.js",
   "scripts": {
-    "test": " nyc --reporter=text --reporter=lcov --check-coverage --branches 100 --statements 100 --lines 100 mocha --reporter xunit --reporter-options output=./junit/test-results.xml",
-    "test-ci": "npm run test && codecov",
+    "test": "mocha --exit test/**/*",
     "lint": "./node_modules/.bin/eslint .",
     "semantic-release": "semantic-release",
     "semantic-prepare": "node ./build/prepare.js",
     "docs": "npx jsdoc2md -c .jsdoc.json --files 'src/*.js'  > docs/API.md",
     "commit": "git-cz",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect",
-    "build": "wsk-builder -v",
-    "deploy": "wsk-builder -v --deploy --test"
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adobe/helix-service"
+    "url": "https://github.com/adobe/helix-example-basic"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/adobe/helix-service/issues"
+    "url": "https://github.com/adobe/helix-example-basic/issues"
   },
-  "homepage": "https://github.com/adobe/helix-service#readme",
+  "homepage": "https://github.com/adobe/helix-example-basic",
   "dependencies": {},
   "devDependencies": {
-    "@adobe/openwhisk-action-builder": "^1.0.2",
+    "jquery": "^3.4.1",
+    "jsdom": "^15.1.1",
+    "request": "^2.88.0",
     "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/exec": "^3.3.2",
@@ -66,9 +65,5 @@
     "ghooks": {
       "pre-commit": "npx lint-staged"
     }
-  },
-  "wsk": {
-    "name": "helix-services/service@1.1.0",
-    "static": []
   }
 }
