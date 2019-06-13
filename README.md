@@ -38,7 +38,7 @@ repository are published automatically, within a few seconds. _TODO add caching 
 For now the only 'magic' files are `header.md` and `footer.md`, other files are considered to be pages of your Helix website.
 
 ## Automated tests
-This example is validated using CircleCI using tests defined in the `test-code` branch of this repository to avoid
+This example is validated with CircleCI using tests defined in the `test-code` branch of this repository to avoid
 cluttering this branch with test code.
 
 You can safely ignore these tests if you're just playing with the example.
