@@ -1,6 +1,6 @@
-# Helix Service
+# Basic Helix Example
 
-> An example service to be used in and with Project Helix
+> This Helix Basic Example is your starting point to [Helix](https://www.project-helix.io/). 
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/helix-example-basic.svg)](https://codecov.io/gh/adobe/helix-example-basic)
@@ -9,8 +9,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/adobe/helix-example-basic.svg)](https://github.com/adobe/helix-example-basic/issues)
 [![LGTM Code Quality Grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/adobe/helix-example-basic.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/adobe/helix-example-basic)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Greenkeeper badge](https://badges.greenkeeper.io/adobe/helix-example-basic.svg)](https://greenkeeper.io/)
-
-This Helix Basic Example is your starting point to [Helix](https://www.project-helix.io/). 
 
 ## Prerequisites
 TODO explain what's needed and point to the Getting Started guide
