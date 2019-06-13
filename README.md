@@ -15,6 +15,16 @@ Other Helix example repositories are found at https://github.com/topics/helix-ex
 ## Prerequisites
 TODO explain what's needed and point to the Getting Started guide
 
+## TODO
+This example should be completed to demonstrate the following:
+
+* content only: index.md (or use README.md as fallback?)
+* custom header and footer: add header.md & footer.md
+* add static html files
+* custom styling: add style.css as override
+
+And the tests in the `test-code` branch should be updated to validate those things.
+
 ## Overview
 > So far this is more a skeleton than a complete example, it needs to be fleshed out but already
 > demonstrates the idea of standalone examples including integration tests that validate them
