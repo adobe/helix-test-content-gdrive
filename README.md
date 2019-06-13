@@ -1,4 +1,4 @@
-# Helix Service
+# Basic Helix Example
 
 > An example service to be used in and with Project Helix
 
