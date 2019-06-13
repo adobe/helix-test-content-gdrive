@@ -1,6 +1,6 @@
-# Basic Helix Example
+# Projec Helix: Basic Example
 
-> This Helix Basic Example is your starting point to [Helix](https://www.project-helix.io/). 
+> This basic Helix example is your starting point to [Helix](https://www.project-helix.io/). 
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/helix-example-basic.svg)](https://codecov.io/gh/adobe/helix-example-basic)
