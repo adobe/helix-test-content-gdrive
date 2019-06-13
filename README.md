@@ -31,15 +31,16 @@ _TODO: complete this example so it fits the below description_
 
  _TODO: refine the GitHub query, in a specific org only?_
 
-## Files that you can ignore
-Feel free to ignore files and folder having names that start with a dot, as well as the `test` and `node_modules` folder
-and the `package.*` files. Those are only used by the Helix team to validate this test with CircleCI.
-
-_TODO: we might hide those files in a separate branch that's merged before running the tests_
-
 ## How to play with this example
-You can modifiy the `*.md` files at will and add new ones. Changes are published automatically, within a few seconds. _TODO add caching info_.
+You can modifiy the `*.md` files at will and add new ones. Changes that are pushed to the master branch of this
+repository are published automatically, within a few seconds. _TODO add caching info_.
 
 For now the only 'magic' files are `header.md` and `footer.md`, other files are considered to be pages of your Helix website.
+
+## Automated tests
+This example is validated using CircleCI using tests defined in the `test-code` branch of this repository to avoid
+cluttering this branch with test code.
+
+You can safely ignore these tests if you're just playing with the example.
 
 
