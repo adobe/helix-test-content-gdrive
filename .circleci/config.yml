@@ -2,11 +2,14 @@ version: 2.1
 
 jobs:
   build:
-    working_directory: ~/funky-claude
+    working_directory: ~/helix-example-basic
     docker:
       - image: circleci/node:10.6
     steps:
       - checkout
+      - run:
+          name: checkout-test-code
+          command: 'git checkout test-code'
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@6'
