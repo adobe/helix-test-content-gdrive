@@ -1,6 +1,6 @@
 # Basic Helix Example - Test code
 
-This is the test code for the Basic Helix Example. 
+This is the test code for the Basic Helix Example, that you can run with `npm test`.
 
 This branch is checked out by the CircleCI config in the master branch and used to run tests against 
 the https://helix-example-basic-adobe.project-helix.page/ URL where the content found in the master branch 
