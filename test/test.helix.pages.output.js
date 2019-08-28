@@ -46,7 +46,7 @@ describe(`Test the Helix Pages output from ${testURL}`, () => {
   });
 
   it('Contains the page title', () => {
-    const expectedTitle = 'Helix Example Zero';
+    const expectedTitle = 'Helix: Basic Example';
     assert.equal(expectedTitle, content.$('h1:first').text());
   });
 
@@ -67,7 +67,7 @@ describe(`Test the Helix Pages output from ${testURL}`, () => {
     [
       'README.html',
       '/index.html',
-      'https://www.project-helix.io/',
+      'https://www.hlx.page/',
     ].forEach((href) => {
       const pattern = `a[href="${href}"]`;
       assert(
@@ -88,18 +88,4 @@ describe(`Test the Helix Pages output from ${testURL}`, () => {
       );
     });
   });
-
-  it('Contains the expected revision markers', () => {
-    [
-      'Testing index revision: 1234',
-      'Testing header revision: 1234',
-      'Testing footer revision: 1234',
-    ].forEach((text) => {
-      assert(
-        content.$('body').text().indexOf(text) > 0,
-        `Expecting '${text})' to be found in the page content`,
-      );
-    });
-  });
-
 });
