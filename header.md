@@ -6,5 +6,3 @@
 
 [&times;](#)
 - [Home](/index.md)
-
-_Testing header revision: 1234_

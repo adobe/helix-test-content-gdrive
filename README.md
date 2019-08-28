@@ -1,6 +1,6 @@
 # Projec Helix: Basic Example
 
-This basic example is your starting point to [Helix](https://www.project-helix.io/). 
+This basic example is your starting point to [Helix](https://www.hlx.page/). 
 
 Other Helix example repositories are found at https://github.com/topics/helix-example
 
