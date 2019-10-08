@@ -4,7 +4,7 @@
   "description": "Helix Basic Example",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha --exit test/**/*",
+    "test:smoke": "env TEST_DOMAIN=$TEST_DOMAIN mocha --exit test/**/*",
     "lint": "./node_modules/.bin/eslint .",
     "semantic-release": "semantic-release",
     "semantic-prepare": "node ./build/prepare.js",

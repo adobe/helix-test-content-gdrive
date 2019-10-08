@@ -21,7 +21,7 @@ const { JSDOM } = require('jsdom');
 const HTTP_REQUEST_TIMEOUT_MSEC = 10000;
 
 // TODO build this URL from the Git repo name - and support local test as well with hlx up
-const testURL = `https://helix-example-basic-adobe.project-helix.page/?cacheKiller=${Math.random()}`;
+const testURL = `https://helix-example-basic-adobe.${process.env.TEST_DOMAIN}/?cacheKiller=${Math.random()}`;
 
 // TODO we should first wait for the Helix Pages output to be
 // updated - include the Git revision hash in a response header
