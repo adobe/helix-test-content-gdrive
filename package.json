@@ -4,8 +4,8 @@
   "description": "Helix Basic Example",
   "main": "src/index.js",
   "scripts": {
-    "test": "env TEST_DOMAIN=hlx.page mocha --exit test/**/* --reporter mocha-junit-reporter",
-    "test:smoke": "env TEST_DOMAIN=$TEST_DOMAIN mocha --exit test/**/* --reporter mocha-junit-reporter",
+    "test": "env TEST_DOMAIN=hlx.page mocha --exit test/**/*",
+    "test:smoke": "env TEST_DOMAIN=$TEST_DOMAIN mocha --exit test/**/*",
     "lint": "./node_modules/.bin/eslint .",
     "semantic-release": "semantic-release",
     "semantic-prepare": "node ./build/prepare.js",
