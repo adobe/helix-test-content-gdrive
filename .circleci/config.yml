@@ -21,7 +21,7 @@ jobs:
             - ./node_modules
       - run:
           name: test
-          command: npm test
+          command: npm run test -- --reporter mocha-junit-reporter
       - store_artifacts:
           path: test-results.xml
           prefix: tests

@@ -38,7 +38,7 @@ describe(`Test the Helix Pages output from ${testURL}`, () => {
   before(function (done) {
     this.timeout(HTTP_REQUEST_TIMEOUT_MSEC);
     request(testURL, async (err, res, body) => {
-      assert(!err);
+      if (err) done(err);
       assert.equal(res.statusCode, 200);
       content.$ = jquery(new JSDOM(body).window);
       done();
